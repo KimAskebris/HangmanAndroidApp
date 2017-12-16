@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.kimaskebris.hangman.GameActivity">
+
+    <!-- User button for guess and playagain -->
+    <Button
+        android:id="@+id/user_button"
+        android:layout_width="211dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="#001a4d"
+        android:onClick="buttonHandler"
+        android:text="Guess"
+        android:textColor="#6699ff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guess_input"
+        app:layout_constraintVertical_bias="0.392" />
+
+
+    <!-- input field for guesses -->
+    <EditText
+        android:id="@+id/guess_input"
+        android:layout_width="283dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msg_box" />
+
+    <!-- Displays the hangman word -->
+    <TextView
+        android:id="@+id/word_box"
+        android:layout_width="358dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="160dp"
+        android:gravity="center"
+        android:textSize="38sp"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:textSize="18sp" />
+
+    <!-- Displays a message for the user -->
+    <TextView
+        android:id="@+id/msg_box"
+        android:layout_width="326dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:text=""
+        android:textSize="20sp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/word_box" />
+
+    <!-- Displays the remaining guesses -->
+    <TextView
+        android:id="@+id/guesses_box"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        android:text=""
+        android:textSize="38sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Displays the score -->
+    <TextView
+        android:id="@+id/score_box"
+        android:layout_width="130dp"
+        android:layout_height="80dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        android:textSize="38sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Remaning guesses label -->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Guesses"
+        android:textColor="	#4d4d4d"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="40dp" />
+
+    <!-- Score label -->
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Score"
+        android:textSize="30sp"
+        android:textColor="	#4d4d4d"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="40dp" />
+
+
+
+</android.support.constraint.ConstraintLayout>
